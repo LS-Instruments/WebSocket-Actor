@@ -24,6 +24,7 @@
 			<Item Name="WebSocket Service Connection Handler Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/WebSocket Service Connection Handler Msg/WebSocket Service Connection Handler Msg.lvclass"/>
 		</Item>
 	</Item>
+	<Item Name="WebSocket Client.lvclass" Type="LVClass" URL="../WebSocket Client/WebSocket Client.lvclass"/>
 	<Item Name="WebSocket Connection.lvclass" Type="LVClass" URL="../WebSocket Connection/WebSocket Connection.lvclass"/>
 	<Item Name="WebSocket Server.lvclass" Type="LVClass" URL="../WebSocket Server/WebSocket Server.lvclass"/>
 	<Item Name="WebSocket Service.lvclass" Type="LVClass" URL="../WebSocket Service/WebSocket Service.lvclass"/>

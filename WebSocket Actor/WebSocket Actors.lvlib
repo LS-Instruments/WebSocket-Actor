@@ -20,6 +20,7 @@
 		</Item>
 		<Item Name="Websocket Service" Type="Folder">
 			<Item Name="Add Client Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/Add Client Msg/Add Client Msg.lvclass"/>
+			<Item Name="Broadcast Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/Broadcast Msg/Broadcast Msg.lvclass"/>
 			<Item Name="Send Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/Send Msg/Send Msg.lvclass"/>
 			<Item Name="WebSocket Service Connection Handler Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/WebSocket Service Connection Handler Msg/WebSocket Service Connection Handler Msg.lvclass"/>
 		</Item>

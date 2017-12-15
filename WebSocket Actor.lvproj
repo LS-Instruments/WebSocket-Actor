@@ -19,10 +19,12 @@
 			<Item Name="Test Reponse.vi" Type="VI" URL="../WebSocket Actor/Tests/Test Reponse.vi"/>
 			<Item Name="WS Full LabVIEW Test.lvlib" Type="Library" URL="../Tests/Full LabVIEW Test/WS Full LabVIEW Test.lvlib"/>
 		</Item>
-		<Item Name="Untitled 5.vi" Type="VI" URL="../Sctratch/Untitled 5.vi"/>
 		<Item Name="WebSocket Actors.lvlib" Type="Library" URL="../WebSocket Actor/WebSocket Actors.lvlib"/>
 		<Item Name="WebSockets.lvlib" Type="Library" URL="../WebSockets/WebSockets.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="Wait (ms)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/time/time.llb/Wait (ms)__ogtk.vi"/>
+			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Actor Framework.lvlib" Type="Library" URL="/&lt;vilib&gt;/ActorFramework/Actor Framework.lvlib"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>

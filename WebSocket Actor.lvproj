@@ -16,8 +16,9 @@
 			<Item Name="WebSockets Tests" Type="Folder" URL="../Tests/WebSockets Tests">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Echo Broadcast Test With Server Manager.lvlib" Type="Library" URL="../Tests/Echo Broadcast Test With Server Manager/Echo Broadcast Test With Server Manager.lvlib"/>
+			<Item Name="Echo Broadcast Test Without Server Manager.lvlib" Type="Library" URL="../Tests/Echo Broadcast Test Without Server Manager/Echo Broadcast Test Without Server Manager.lvlib"/>
 			<Item Name="Test Reponse.vi" Type="VI" URL="../WebSocket Actor/Tests/Test Reponse.vi"/>
-			<Item Name="WS Full LabVIEW Test.lvlib" Type="Library" URL="../Tests/Full LabVIEW Test/WS Full LabVIEW Test.lvlib"/>
 		</Item>
 		<Item Name="WebSocket Actors.lvlib" Type="Library" URL="../WebSocket Actor/WebSocket Actors.lvlib"/>
 		<Item Name="WebSockets.lvlib" Type="Library" URL="../WebSockets/WebSockets.lvlib"/>

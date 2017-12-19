@@ -6,7 +6,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Abstract Messages for Caller" Type="Folder">
 		<Item Name="WebSocket Connection Handler Msg.lvclass" Type="LVClass" URL="../Abstract Messages/WebSocket Connection Handler Msg/WebSocket Connection Handler Msg.lvclass"/>
-		<Item Name="WebSocket Service Enqueuer Msg.lvclass" Type="LVClass" URL="../Abstract Messages/WebSocket Service Enqueuer Msg/WebSocket Service Enqueuer Msg.lvclass"/>
+		<Item Name="WebSocket Server-Service Enqueuer Msg.lvclass" Type="LVClass" URL="../Abstract Messages/WebSocket Server-Service Enqueuer Msg/WebSocket Server-Service Enqueuer Msg.lvclass"/>
 	</Item>
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="WebSocket Connection" Type="Folder">
@@ -24,9 +24,12 @@
 			<Item Name="Send Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/Send Msg/Send Msg.lvclass"/>
 			<Item Name="WebSocket Service Connection Handler Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/WebSocket Service Connection Handler Msg/WebSocket Service Connection Handler Msg.lvclass"/>
 		</Item>
+		<Item Name="Launch Server Msg.lvclass" Type="LVClass" URL="../WebSocket Server Manager Messages/Launch Server Msg/Launch Server Msg.lvclass"/>
+		<Item Name="Stop Server Msg.lvclass" Type="LVClass" URL="../WebSocket Server Manager Messages/Stop Server Msg/Stop Server Msg.lvclass"/>
 	</Item>
 	<Item Name="WebSocket Client.lvclass" Type="LVClass" URL="../WebSocket Client/WebSocket Client.lvclass"/>
 	<Item Name="WebSocket Connection.lvclass" Type="LVClass" URL="../WebSocket Connection/WebSocket Connection.lvclass"/>
+	<Item Name="WebSocket Server Manager.lvclass" Type="LVClass" URL="../WebSocket Server Manager/WebSocket Server Manager.lvclass"/>
 	<Item Name="WebSocket Server.lvclass" Type="LVClass" URL="../WebSocket Server/WebSocket Server.lvclass"/>
 	<Item Name="WebSocket Service.lvclass" Type="LVClass" URL="../WebSocket Service/WebSocket Service.lvclass"/>
 </Library>

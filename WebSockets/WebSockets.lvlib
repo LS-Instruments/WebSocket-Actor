@@ -26,10 +26,14 @@ http://www.mediamongrels.com
 			<Item Name="HTTPHeaderLine.vi" Type="VI" URL="../HTTPHeaderLine.vi"/>
 			<Item Name="ProcessHandshakeRequest.vi" Type="VI" URL="../ProcessHandshakeRequest.vi"/>
 			<Item Name="ProduceAcceptKey.vi" Type="VI" URL="../ProduceAcceptKey.vi"/>
+			<Item Name="ProcessHandshakeResponse.vi" Type="VI" URL="../ProcessHandshakeResponse.vi"/>
 			<Item Name="HeadersArrayToString.vi" Type="VI" URL="../HeadersArrayToString.vi"/>
 			<Item Name="SplitHTTPHeaders.vi" Type="VI" URL="../SplitHTTPHeaders.vi"/>
 			<Item Name="ReadHTTPHeader.vi" Type="VI" URL="../ReadHTTPHeader.vi"/>
 			<Item Name="ProcessWSProtocol.vi" Type="VI" URL="../ProcessWSProtocol.vi"/>
+			<Item Name="CreateHTTPResponse.vi" Type="VI" URL="../CreateHTTPResponse.vi"/>
+			<Item Name="HTTPResponseCodes.ctl" Type="VI" URL="../HTTPResponseCodes.ctl"/>
+			<Item Name="HTTPResponseHeaderLine.vi" Type="VI" URL="../../WebSocket Actor/WebSocket Server/HTTPResponseHeaderLine.vi"/>
 		</Item>
 		<Item Name="Message Framing" Type="Folder">
 			<Item Name="DataLengthBytes.vi" Type="VI" URL="../DataLengthBytes.vi"/>
@@ -42,7 +46,7 @@ http://www.mediamongrels.com
 			<Item Name="SHA-1 Pad.vi" Type="VI" URL="../SHA-1/SHA-1 Pad.vi"/>
 			<Item Name="SHA-1.vi" Type="VI" URL="../SHA-1/SHA-1.vi"/>
 		</Item>
-		<Item Name="Is URI Relative.vi" Type="VI" URL="../Is URI Relative.vi"/>
+		<Item Name="ValudateHTTPURI.vi" Type="VI" URL="../ValudateHTTPURI.vi"/>
 	</Item>
 	<Item Name="Controls" Type="Folder">
 		<Item Name="Headers.ctl" Type="VI" URL="../Headers.ctl"/>

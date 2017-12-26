@@ -21,10 +21,14 @@
 			<Item Name="Test Reponse.vi" Type="VI" URL="../WebSocket Actor/Tests/Test Reponse.vi"/>
 			<Item Name="Test Server Manager.lvlib" Type="Library" URL="../Tests/Test Server Manager/Test Server Manager.lvlib"/>
 		</Item>
+		<Item Name="String Search Speed.vi" Type="VI" URL="../Sctratch/String Search Speed.vi"/>
 		<Item Name="WebSocket Actors.lvlib" Type="Library" URL="../WebSocket Actor/WebSocket Actors.lvlib"/>
 		<Item Name="WebSockets.lvlib" Type="Library" URL="../WebSockets/WebSockets.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
+				<Item Name="Trim Whitespace (String Array)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/Trim Whitespace (String Array)__ogtk.vi"/>
+				<Item Name="Trim Whitespace (String)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/Trim Whitespace (String)__ogtk.vi"/>
+				<Item Name="Trim Whitespace__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/string/string.llb/Trim Whitespace__ogtk.vi"/>
 				<Item Name="Wait (ms)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/time/time.llb/Wait (ms)__ogtk.vi"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">

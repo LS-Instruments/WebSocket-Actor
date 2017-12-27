@@ -15,7 +15,7 @@ $(document).ready(function() {
 		var socket;  
 		
 		// The LabVIEW demo uses port 6123, but this can be changed to any port. Change 'localhost' if connecting to a server running on another IP address.
-		var host = "ws://localhost:6123/resource";  
+		var host = "ws://localhost:6123/resource/name";  
   
 		try{  
 			var socket = new WebSocket(host);  

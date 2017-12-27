@@ -37,8 +37,11 @@ http://www.mediamongrels.com
 		</Item>
 		<Item Name="Message Framing" Type="Folder">
 			<Item Name="DataLengthBytes.vi" Type="VI" URL="../DataLengthBytes.vi"/>
+			<Item Name="FormatCloseReason.vi" Type="VI" URL="../FormatCloseReason.vi"/>
 			<Item Name="DecodeMaskedBytes.vi" Type="VI" URL="../DecodeMaskedBytes.vi"/>
+			<Item Name="GetOpcode.vi" Type="VI" URL="../GetOpcode.vi"/>
 			<Item Name="EncodeMaskedBytes.vi" Type="VI" URL="../EncodeMaskedBytes.vi"/>
+			<Item Name="GetFinalFrameBit.vi" Type="VI" URL="../GetFinalFrameBit.vi"/>
 		</Item>
 		<Item Name="SHA-1" Type="Folder">
 			<Item Name="SHA-1 Core.vi" Type="VI" URL="../SHA-1/SHA-1 Core.vi"/>
@@ -50,6 +53,8 @@ http://www.mediamongrels.com
 	</Item>
 	<Item Name="Controls" Type="Folder">
 		<Item Name="Headers.ctl" Type="VI" URL="../Headers.ctl"/>
+		<Item Name="Opcode.ctl" Type="VI" URL="../Opcode.ctl"/>
+		<Item Name="StatusCode.ctl" Type="VI" URL="../StatusCode.ctl"/>
 	</Item>
 	<Item Name="API" Type="Folder">
 		<Item Name="DoHandshake.vi" Type="VI" URL="../DoHandshake.vi"/>
@@ -57,8 +62,12 @@ http://www.mediamongrels.com
 		<Item Name="Read.vi" Type="VI" URL="../Read.vi"/>
 		<Item Name="Write.vi" Type="VI" URL="../Write.vi"/>
 		<Item Name="Close.vi" Type="VI" URL="../Close.vi"/>
+		<Item Name="Ping.vi" Type="VI" URL="../Ping.vi"/>
+		<Item Name="Pong.vi" Type="VI" URL="../Pong.vi"/>
 		<Item Name="GetHeader.vi" Type="VI" URL="../GetHeader.vi"/>
 		<Item Name="Format Http Request.vi" Type="VI" URL="../Format Http Request.vi"/>
 		<Item Name="Parse URI.vi" Type="VI" URL="../Parse URI.vi"/>
+		<Item Name="SendDataFrame.vi" Type="VI" URL="../SendDataFrame.vi"/>
+		<Item Name="DecodeCloseReason.vi" Type="VI" URL="../DecodeCloseReason.vi"/>
 	</Item>
 </Library>

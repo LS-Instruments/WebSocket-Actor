@@ -33,7 +33,7 @@ http://www.mediamongrels.com
 			<Item Name="ProcessWSProtocol.vi" Type="VI" URL="../ProcessWSProtocol.vi"/>
 			<Item Name="CreateHTTPResponse.vi" Type="VI" URL="../CreateHTTPResponse.vi"/>
 			<Item Name="HTTPResponseCodes.ctl" Type="VI" URL="../HTTPResponseCodes.ctl"/>
-			<Item Name="HTTPResponseHeaderLine.vi" Type="VI" URL="../../WebSocket Actor/WebSocket Server/HTTPResponseHeaderLine.vi"/>
+			<Item Name="HTTPResponseHeaderLine.vi" Type="VI" URL="../HTTPResponseHeaderLine.vi"/>
 		</Item>
 		<Item Name="Message Framing" Type="Folder">
 			<Item Name="DataLengthBytes.vi" Type="VI" URL="../DataLengthBytes.vi"/>

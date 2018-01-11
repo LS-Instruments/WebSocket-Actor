@@ -5,17 +5,17 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages for this Actor" Type="Folder">
-		<Item Name="WS Test Client" Type="Folder">
-			<Item Name="Client Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Client Messages/Client Connection Handler Msg/Client Connection Handler Msg.lvclass"/>
+		<Item Name="WS Test Client Subscriber" Type="Folder">
+			<Item Name="Client Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Client Subscriber Messages/Client Connection Handler Msg/Client Connection Handler Msg.lvclass"/>
 		</Item>
-		<Item Name="WS Test Server" Type="Folder">
-			<Item Name="Server Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Server Messages/Server Connection Handler Msg/Server Connection Handler Msg.lvclass"/>
-			<Item Name="WebSocket Server Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Test Server Messages/WebSocket Server Enqueuer Msg/WebSocket Server Enqueuer Msg.lvclass"/>
-			<Item Name="WebSocket Service Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Test Server Messages/WebSocket Service Enqueuer Msg/WebSocket Service Enqueuer Msg.lvclass"/>
+		<Item Name="WS Test Server Subscriber" Type="Folder">
+			<Item Name="Server Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Server Subscriber Messages/Server Connection Handler Msg/Server Connection Handler Msg.lvclass"/>
+			<Item Name="WebSocket Server Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Test Server Subscriber Messages/WebSocket Server Enqueuer Msg/WebSocket Server Enqueuer Msg.lvclass"/>
+			<Item Name="WebSocket Service Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Test Server Subscriber Messages/WebSocket Service Enqueuer Msg/WebSocket Service Enqueuer Msg.lvclass"/>
 		</Item>
 	</Item>
 	<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
 	<Item Name="Server Manager Test.vi" Type="VI" URL="../Server Manager Test.vi"/>
-	<Item Name="WS Test Client.lvclass" Type="LVClass" URL="../WS Test Client/WS Test Client.lvclass"/>
-	<Item Name="WS Test Server.lvclass" Type="LVClass" URL="../WS Test Server/WS Test Server.lvclass"/>
+	<Item Name="WS Test Client Subscriber.lvclass" Type="LVClass" URL="../WS Test Client Subscriber/WS Test Client Subscriber.lvclass"/>
+	<Item Name="WS Test Server Subscriber.lvclass" Type="LVClass" URL="../WS Test Server Subscriber/WS Test Server Subscriber.lvclass"/>
 </Library>

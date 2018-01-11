@@ -2,6 +2,8 @@
 <LVClass LVVersion="16008000">
 	<Property Name="NI.Lib.ContainingLib" Type="Str">WebSocket Actors.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../WebSocket Actors.lvlib</Property>
+	<Property Name="NI.Lib.Description" Type="Str">Manages the definition of WebSocket services on a specified server. Services can be defined by the subscriber by sending the "Add Service" message to the actor. The subscriber must provide a data handler message in form of a concrete implementation of the "WebSocket Connection Handler Msg" abstract message used to handle the connection events corresponding to the WebSocket communication and a concrete implementation of the "WebSocket Server-Service Enqueuer Msg" abstract message usaed to receive the WebSocket service actor enqueuer. For each service defined a "WebSocket Service" actor is started that will send data to the subscriber that has defined the service. The server is characterized by an interface and a port on which it listens. The actor listens according the server specifications on a port and on an interface if not all, when a connection is established the actor performs the WebSocket handshake. If the service requested is defined in this server, we inform the WebSocket service Actor who will start a corresponding WebSocket connection actor. If either the service is not defined, or the handshake fails, we do nothing, the WebSocket protocol will take care of communicating the failure to the client</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!**!!!*Q(C=\&gt;5^&lt;NN!%)&lt;BTY%,N\R"I"M9![2DJSPI#H-&amp;NCF6O:]LK.%"",B.-U#[&gt;)*[&amp;?REF]\,V6C+9=!+E.`#3[]M@PPX?,GAJ6:OJ'M^83L^G_6HWN7XSIL^]&lt;.^5]O0\;K\9^^?`3EZN`=[NDX0&gt;'Z`/&lt;A[V^WZ`&lt;T]K`:@`0P?&lt;L^1^&amp;\?S\]NHS]?UD^_:K]UP9CI31WK5UX45E^*HO2*HO2*HO2"(O2"(O2"(O2/\O2/\O2/\O2'&lt;O2'&lt;O2'&lt;O4N)B?ZS%5/+6E]73C:.*EA[1R&amp;S5@C34S**`&amp;QK]34?"*0YEE]&gt;&amp;(C34S**`%E(I9J]33?R*.Y%A^4.5GWCRR0YG&amp;[":\!%XA#4_"B317?!"!M&amp;EQ=4!*$170Q*@!%HM$$6Q7?Q".Y!E`AI6G"*`!%HM!4?"D3&gt;C7;:LL)]4#.()`D=4S/R`%QN2S0YX%]DM@RM*Q=D_.R%-[#TO11Z!RS/DAXDM@R]%O/R`%Y(M@D?'BK4]D&lt;TES;[3,(9XA-D_%R0);(+72Y$)`B-4S'BWFF?!S0Y4%]BI?F:(A-D_%R)-;C,#^D-G/AU=E)$!]`\&lt;29?UL2*.9OK1[P[F#K$JPK%+E/B_KBKR[G[C'J.F_VK;L.5GW#[I^4I659V3+KQ6.(D8ROK2PKCLKE$N1&amp;&gt;5[&gt;5&lt;NJ['`O/)[DNNON.JO.6KO6FMOFBG(19L(1@$\8&lt;$:4VX7HV]"(LN-,Y?6\;@T3L@@X$_P^V^PVY@(&lt;\H$X;@=8`J@_"_^'@&gt;#0]\*(XQ%]F([G!!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">369131520</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.2</Property>
@@ -48,9 +50,9 @@
 		</Item>
 	</Item>
 	<Item Name="properties" Type="Folder">
-		<Item Name="Handshake timeout (5000 ms)" Type="Property Definition">
-			<Property Name="NI.ClassItem.Property.LongName" Type="Str">Handshake timeout (5000 ms)</Property>
-			<Property Name="NI.ClassItem.Property.ShortName" Type="Str">Handshake timeout (5000 ms)</Property>
+		<Item Name="Handshake Timeout (5000 ms)" Type="Property Definition">
+			<Property Name="NI.ClassItem.Property.LongName" Type="Str">Handshake Timeout (5000 ms)</Property>
+			<Property Name="NI.ClassItem.Property.ShortName" Type="Str">Handshake Timeout (5000 ms)</Property>
 			<Property Name="NI.ClassItem.Property.SortKey" Type="Int">-1</Property>
 			<Item Name="Write Handshake timeout (5000 ms).vi" Type="VI" URL="../properties/Write Handshake timeout (5000 ms).vi">
 				<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;A#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'*!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;"!=!!?!!!R&amp;F&gt;F9F.P9WNF&gt;#""9X2P=H-O&lt;(:M;7)96W6C5W^D;W6U)&amp;.F=H:F=CZM&gt;G.M98.T!"28:7*4&lt;W.L:81A5W6S&gt;G6S)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!B1!-!'UBB&lt;G2T;'&amp;L:3"U;7VF&lt;X6U)#AV-$!Q)'VT+1"/1(!!(A!!-2:8:7*4&lt;W.L:81A17.U&lt;X*T,GRW&lt;'FC'&amp;&gt;F9F.P9WNF&gt;#"4:8*W:8)O&lt;(:D&lt;'&amp;T=Q!46W6C5W^D;W6U)&amp;.F=H:F=C"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!)!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!1!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>

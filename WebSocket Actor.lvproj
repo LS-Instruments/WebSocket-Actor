@@ -22,7 +22,6 @@
 		<Item Name="String Search Speed.vi" Type="VI" URL="../Sctratch/String Search Speed.vi"/>
 		<Item Name="Untitled 1.vi" Type="VI" URL="../Sctratch/Untitled 1.vi"/>
 		<Item Name="WebSocket Actors.lvlib" Type="Library" URL="../WebSocket Actor/WebSocket Actors.lvlib"/>
-		<Item Name="WebSockets.lvlib" Type="Library" URL="../../../Websockets/WebSockets.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Wait (ms)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/time/time.llb/Wait (ms)__ogtk.vi"/>
@@ -74,10 +73,7 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
-			<Item Name="CreateHTTPResponse.vi" Type="VI" URL="../WebSockets/CreateHTTPResponse.vi"/>
-			<Item Name="HTTPResponseCodes.ctl" Type="VI" URL="../WebSockets/HTTPResponseCodes.ctl"/>
-			<Item Name="HTTPResponseHeaderLine.vi" Type="VI" URL="../WebSockets/HTTPResponseHeaderLine.vi"/>
-			<Item Name="Opcode.ctl" Type="VI" URL="../WebSockets/Opcode.ctl"/>
+			<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../../Websockets/LV WebSockets.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

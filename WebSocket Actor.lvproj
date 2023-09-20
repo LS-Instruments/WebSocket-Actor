@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="17008000">
+<Project Type="Project" LVVersion="21008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -12,15 +12,16 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Tests" Type="Folder">
-			<Item Name="Examples" Type="Folder"/>
+		<Item Name="Examples" Type="Folder">
 			<Item Name="Echo Broadcast Test With Server Manager.lvlib" Type="Library" URL="../Tests/Echo Broadcast Test With Server Manager/Echo Broadcast Test With Server Manager.lvlib"/>
 			<Item Name="Echo Broadcast Test Without Server Manager.lvlib" Type="Library" URL="../Tests/Echo Broadcast Test Without Server Manager/Echo Broadcast Test Without Server Manager.lvlib"/>
-			<Item Name="Test Reponse.vi" Type="VI" URL="../WebSocket Actor/Tests/Test Reponse.vi"/>
+		</Item>
+		<Item Name="libs" Type="Folder">
+			<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../../Websockets/LV WebSockets.lvlib"/>
+		</Item>
+		<Item Name="Tests" Type="Folder">
 			<Item Name="Test Server Manager.lvlib" Type="Library" URL="../Tests/Test Server Manager/Test Server Manager.lvlib"/>
 		</Item>
-		<Item Name="String Search Speed.vi" Type="VI" URL="../Sctratch/String Search Speed.vi"/>
-		<Item Name="Untitled 1.vi" Type="VI" URL="../Sctratch/Untitled 1.vi"/>
 		<Item Name="WebSocket Actors.lvlib" Type="Library" URL="../WebSocket Actor/WebSocket Actors.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -66,6 +67,7 @@
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Single String To Qualified Name Array.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Single String To Qualified Name Array.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="Synchronize Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Synchronize Data Flow.vim"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
@@ -77,7 +79,6 @@
 			</Item>
 			<Item Name="AF Debug.lvlib" Type="Library" URL="/&lt;resource&gt;/AFDebug/AF Debug.lvlib"/>
 			<Item Name="LV Config Read String.vi" Type="VI" URL="/&lt;resource&gt;/dialog/lvconfig.llb/LV Config Read String.vi"/>
-			<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../../Websockets/LV WebSockets.lvlib"/>
 			<Item Name="systemLogging.dll" Type="Document" URL="systemLogging.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>

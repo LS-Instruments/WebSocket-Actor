@@ -22,6 +22,7 @@
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Test Server Manager.lvlib" Type="Library" URL="../Tests/Test Server Manager/Test Server Manager.lvlib"/>
 		</Item>
+		<Item Name="External Client Launch.vi" Type="VI" URL="../Tests/External Client Launch.vi"/>
 		<Item Name="WebSocket Actors.lvlib" Type="Library" URL="../WebSocket Actor/WebSocket Actors.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">

@@ -1,0 +1,1 @@
+pandoc --extract-media ./ -o README.md -f docx -t markdown_strict '.\WebSocket documentation.docx'

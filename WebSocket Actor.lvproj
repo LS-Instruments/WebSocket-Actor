@@ -17,10 +17,13 @@
 			<Item Name="Echo Broadcast Test With Server Manager.lvlib" Type="Library" URL="../Examples/Echo Broadcast Test With Server Manager/Echo Broadcast Test With Server Manager.lvlib"/>
 			<Item Name="Echo Broadcast Test Without Server Manager.lvlib" Type="Library" URL="../Examples/Echo Broadcast Test Without Server Manager/Echo Broadcast Test Without Server Manager.lvlib"/>
 			<Item Name="Echo Broadcast with External Client.lvlib" Type="Library" URL="../Examples/Echo Broadcast with External Client/Echo Broadcast with External Client.lvlib"/>
+			<Item Name="Echo Reply Test With Server Manager.lvlib" Type="Library" URL="../Examples/Echo Reply Test With Server Manager/Echo Reply Test With Server Manager.lvlib"/>
 		</Item>
 		<Item Name="libs" Type="Folder">
-			<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../../Websockets/LV WebSockets.lvlib"/>
+			<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../LV-Websockets/LV WebSockets.lvlib"/>
 		</Item>
+		<Item Name="README.md" Type="Document" URL="../README.md"/>
+		<Item Name="WebSocket Actor Release Notes.txt" Type="Document" URL="../WebSocket Actor Release Notes.txt"/>
 		<Item Name="WebSocket Actors.lvlib" Type="Library" URL="../WebSocket Actor/WebSocket Actors.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">

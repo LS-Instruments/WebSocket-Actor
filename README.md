@@ -3,68 +3,9 @@
 
 Authors: Andrea Vaccaro - David Grollier
 
-# Contents
-
-[1 Description [2](#description)](#description)
-
-[2 Library [2](#library)](#library)
-
-[3 Actors [2](#actors)](#actors)
-
-[3.1 WebSocket Client.lvclass
-[2](#websocket-client.lvclass)](#websocket-client.lvclass)
-
-[3.2 WebSocket Server Manager.lvclass
-[3](#websocket-server-manager.lvclass)](#websocket-server-manager.lvclass)
-
-[3.3 WebSocket Server.lvclass
-[3](#websocket-server.lvclass)](#websocket-server.lvclass)
-
-[3.4 WebSocket Service.lvclass
-[3](#websocket-service.lvclass)](#websocket-service.lvclass)
-
-[3.5 Abstract messages [4](#abstract-messages)](#abstract-messages)
-
-[3.5.1 WebSocket Connection Handler Msg.lvclass
-[4](#websocket-connection-handler-msg.lvclass)](#websocket-connection-handler-msg.lvclass)
-
-[3.5.2 WebSocket Server-Service Enqueuer Msg.lvclass
-[4](#websocket-server-service-enqueuer-msg.lvclass)](#websocket-server-service-enqueuer-msg.lvclass)
-
-[4 API [4](#api)](#api)
-
-[4.1 WebSocket Server Manager
-[4](#websocket-server-manager)](#websocket-server-manager)
-
-[4.1.1 WebSocket Server Listener Settings
-[4](#websocket-server-listener-settings)](#websocket-server-listener-settings)
-
-[4.1.2 Launch Server [4](#launch-server)](#launch-server)
-
-[4.1.3 Stop a Server [5](#stop-a-server)](#stop-a-server)
-
-[4.2 WebSocket Server [5](#websocket-server)](#websocket-server)
-
-[4.2.1 Add Service [6](#add-service)](#add-service)
-
-[4.3 WebSocket Service [7](#websocket-service)](#websocket-service)
-
-[4.3.1 Broadcast [7](#broadcast)](#broadcast)
-
-[4.3.2 Send [7](#send)](#send)
-
-[WebSocket Client [7](#websocket-client)](#websocket-client)
-
-[4.4 [7](#websocket-client)](#websocket-client)
-
-[4.5 Send to Peers [8](#send-to-peers)](#send-to-peers)
-
 # Description
 
-A library implementing a high-level actor-based implementation of
-WebSocket communication. An actor can subscribe to the WebSocket Actor
-to facilitate WebSocket-based communication. It can serve both as a
-client and a server.
+A library implementing a high-level actor-based WebSocket communication. An actor can subscribe to a WebSocket Actor (either server or client) to facilitate WebSocket-based communication.
 
 Please note that within this library **resource names** as defined in
 the WebSocket protocol specification are referred to as **services.**

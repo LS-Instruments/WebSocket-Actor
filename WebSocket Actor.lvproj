@@ -20,7 +20,11 @@
 			<Item Name="Echo Reply Test With Server Manager.lvlib" Type="Library" URL="../Examples/Echo Reply Test With Server Manager/Echo Reply Test With Server Manager.lvlib"/>
 		</Item>
 		<Item Name="libs" Type="Folder">
-			<Item Name="LV WebSockets.lvlib" Type="Library" URL="../../LV-Websockets/LV WebSockets.lvlib"/>
+			<Item Name="LV WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/LS Instruments AG/LV-WebSockets/LV WebSockets.lvlib"/>
+		</Item>
+		<Item Name="VIPM" Type="Folder">
+			<Item Name="WebSocket-Actor.vipb" Type="Document" URL="../WebSocket-Actor.vipb"/>
+			<Item Name="WebSocket-Actor.vipc" Type="Document" URL="../WebSocket-Actor.vipc"/>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="WebSocket Actor Release Notes.txt" Type="Document" URL="../WebSocket Actor Release Notes.txt"/>
@@ -65,6 +69,7 @@
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Synchronize Data Flow.vim" Type="VI" URL="/&lt;vilib&gt;/Utility/Synchronize Data Flow.vim"/>
+				<Item Name="System Exec.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/system.llb/System Exec.vi"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>

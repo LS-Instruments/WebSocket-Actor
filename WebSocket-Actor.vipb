@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2023-10-21 19:41:17" Creator="AndreaVaccaro(LSInst" Comments="" ID="bf26fadb026a7b1f8b47285fe8103e90">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2023-10-24 00:30:02" Creator="AndreaVaccaro(LSInst" Comments="" ID="abcba268b29e79b0773c1245f748f549">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_WebSocket_Actor</Package_File_Name>
-    <Library_Version>1.0.0.4</Library_Version>
+    <Library_Version>1.0.0.6</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -18,11 +18,11 @@
   <Advanced_Settings>
     <Package_Dependencies>
       <External_Dependencies>gpower_lib_error &gt;= 2014.0.0.38</External_Dependencies>
-      <External_Dependencies>ls_instruments_ag_lib_lv_websockets &gt;= 1.7.0.8</External_Dependencies>
+      <External_Dependencies>ls_instruments_ag_lib_lv_websockets &gt;= 1.7.0.10</External_Dependencies>
       <External_Dependencies>oglib_error &gt;= 4.2.0.23</External_Dependencies>
       <External_Dependencies>oglib_time &gt;= 4.0.1.3</External_Dependencies>
       <Direct_Dependencies>gpower_lib_error-2014.0.0.38</Direct_Dependencies>
-      <Direct_Dependencies>ls_instruments_ag_lib_lv_websockets-1.7.0.8</Direct_Dependencies>
+      <Direct_Dependencies>ls_instruments_ag_lib_lv_websockets-1.7.0.10</Direct_Dependencies>
       <Direct_Dependencies>mgi_lib_monitored_actor-2.0.0.23</Direct_Dependencies>
       <Direct_Dependencies>oglib_error-4.2.0.23</Direct_Dependencies>
       <Direct_Dependencies>oglib_time-4.0.1.3</Direct_Dependencies>
@@ -141,6 +141,9 @@
       </Namespace_Overrides>
       <Exclusions>
         <Path>Documentation</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>vipm packages</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
@@ -374,7 +377,7 @@
         <Path>WebSocket Actor\WebSocket Server\typedefs\Listener Settings.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>46B5D0D7C9CD08A1996121F3E609D4E7</GUID>
+      <GUID>537C0F7E8CE280D6941CC309722FF9E4</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -423,7 +426,7 @@
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Server-Service Enqueuer Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C3E0B01B248A527C177FD9AFAA54B99B</GUID>
+      <GUID>7385254ABECC421A8ABA1FE2237B75C0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -500,7 +503,7 @@
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BD5F9AF0DDF86CF6974BA7419C62ECC9</GUID>
+      <GUID>17A33C3EC20AAF9A303EAA70D19168DE</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

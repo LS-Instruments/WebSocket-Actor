@@ -81,6 +81,8 @@ WebSocket service actor enqueuer.
 
 ## Abstract messages
 
+Two abstract messages must be subclassed to allow the interaction of either a WebSocket Server, a WebSocket Service or a WebSocket Client to interact with the corresponding subscriber actor.
+
 ### WebSocket Connection Handler Msg.lvclass
 
 This abstract message is sent by either the WebSocket Client or by the
@@ -271,8 +273,34 @@ alt="A computer screen shot of a message Description automatically generated" />
 **Message Enqueuer in** specifies the enqueuer of the WebSocket Client
 actor.
 
-**Data Format (Text)** Specifies an Enum allwing top specify if the data
-format is either “Text” or “Binary”.
+**Data Format (Text)** Specifies an Enum allowing to specify if the data format is either “Text” or “Binary”.
 
-**Timeout ms** (5000) is the timeout to establish the connection to the
-server. A value of –1 indicates to wait indefinitely.
+**Timeout ms (5000)** is the timeout to establish the connection to the server. A value of –1 indicates to wait indefinitely.
+
+## Abstract Messages
+Abstract messages have private properties that carry useful information to be used when the subscriber actor implementing the Do.vi method to act on the subscriber actor
+
+### WebSocket Server-Service Enqueuer Msg
+
+![WebSocket Server-Service Enqueuer Msg](media/WebSocket%20Server-Service%20Enqueuer%20Msg.png)
+
+**Error** Carries the error resulting from either launching a server, or adding a service to a server or connecting to a client
+
+**Service Name** String detailing the name of the service corresponding to the service that is being started and to which we are subscribing
+
+**WebSocket Server-Service Enqueuer** the enqueuer of the server/service that was just started and to which we are subscribing
+
+### WebSocket Connection Handler Msg
+![WebSocket Connection Handler Msg](media/WebSocket%20Connection%20Handler%20Msg.png)
+
+**Client/Service Enqueuer** The enqueuer of the Client/Service to which we subscribed that triggered the event
+
+**Connection Event** Enum specifying the type of event being triggered. Can take values "On Connect", "On Message", "On Close", and "On Drop"
+
+**Data** String containing the data being received if the event triggered is of type "On Message"
+
+**Data Format** Enum specifying the type of data being received in case of a "On Message" event. It can take values "Binary" and "Text"
+
+**Peer ID** String specifying the Peer ID from which the event is being triggered if the event is originating from a client
+
+**Service Name** String specifying the service name from which the event is being triggered

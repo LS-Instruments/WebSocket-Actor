@@ -96,16 +96,15 @@ WebSocket Service to the subscriber Actor on four events:
 
 -   Drop
 
-For each caller Actor a concrete subclass of the message should be
-created by overriding the methods:
+For each subscriber Actor a concrete subclass of the message should be created by overriding the methods:
 
--   OnConnect
+-   "On Connect.vi"
 
--   OnDisconnect
+-   "On Disconnect.vi"
 
--   OnMessage
+-   "On Message.vi"
 
--   OnDrop
+-   "On Drop.vi"
 
 The subscriber actor can program the required action for the
 corresponding event.
@@ -278,7 +277,7 @@ actor.
 **Timeout ms (5000)** is the timeout to establish the connection to the server. A value of –1 indicates to wait indefinitely.
 
 ## Abstract Messages
-Abstract messages have private properties that carry useful information to be used when the subscriber actor implementing the Do.vi method to act on the subscriber actor
+Abstract messages have private properties that carry useful information to be used when the subscriber actor implementing the Do.vi method ("WebSocket Server-Service Enqueuer Msg" message) or the "On Close.vi", "On Connect.vi", "On Message.vi", "On Drop.vi" ("WebSocket Connection Handler Msg" message) to act on the subscriber actor
 
 ### WebSocket Server-Service Enqueuer Msg
 

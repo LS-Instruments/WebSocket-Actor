@@ -81,7 +81,7 @@ WebSocket service actor enqueuer.
 
 ## Abstract messages
 
-Two abstract messages must be subclassed to allow the interaction of either a WebSocket Server, a WebSocket Service or a WebSocket Client to interact with the corresponding subscriber actor.
+Two abstract messages must be subclassed to allow the interaction of either a WebSocket Server, a WebSocket Service or a WebSocket Client with the corresponding subscriber actor.
 
 ### WebSocket Connection Handler Msg.lvclass
 

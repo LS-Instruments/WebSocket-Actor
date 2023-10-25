@@ -154,11 +154,9 @@ Manager actor.
 
 **Listener Settings** specifies the listener settings for the Server.
 
-**Handshake timeout** specifies the timeout of the handshake when the
-client establishes a WebSocket connection to the server.
+**Handshake timeout** specifies the timeout of the handshake when the client establishes a WebSocket connection to the server.
 
-**Receive Server Enqueuer Handler** specifies the concrete message (to
-be created) child of the abstract message “*WebSocket Server-Service
+**Receive Server Enqueuer Handler** specifies the concrete message (to be created) child of the abstract message “*WebSocket Server-Service
 Enqueuer Msg.lvclass*”.
 
 ### Stop a Server
@@ -211,8 +209,7 @@ actor.
 
 **Service Name** specifies the name of the service.
 
-**Subscriber Enqueuer** specifies the enqueuer of the actor (to be
-created) that subscribes to the WebSocket Server Actor.
+**Subscriber Enqueuer** specifies the enqueuer of the actor that subscribes to the WebSocket Server Actor.
 
 **WebSocket Data Handler** specifies the concrete message (to be
 created) child of the abstract message “*WebSocket Connection Handler

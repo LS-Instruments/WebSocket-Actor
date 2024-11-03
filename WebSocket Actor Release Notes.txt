@@ -1,3 +1,5 @@
 WebSocket Actor Release Notes
+v1.1.0
+- Implement Keepalive functionality
 v1.0.0
 - First public release

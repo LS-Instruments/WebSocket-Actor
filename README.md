@@ -122,6 +122,22 @@ stored in the requesting actor.
 
 ## WebSocket Server Manager
 
+### Keepalive Settings
+![Keepalive Settings](media/Keepalive%20Settings.png)
+
+The Keepalive settings allow for the configuration of the Keepalive functionality whereby client/server checks if the peer is still responding ("Alive") by sending WebSockets Ping messages to the peer on a certain time interval. The peer will answer with a WebSockets Pong message. If the answer is not received within a certain amount timeout the client/server will drop the connection.
+
+**Enable** If true enables the Keepalive functionality
+**Ping Interval (ms)** is the interval of time in milliseconds that elapses between the receipt of the previous pong response and the sending of the next ping message
+**Ping Timeout (ms)** is the interval of time in milliseconds that a client/server waits after sending a ping message until declaring the peer not Alive and dropping the connection
+
+### WebSocket Server Manager Configuration
+Before launch the "Server Manager Actor" can be configured with the Keepalive settings described above by means of the following property node
+
+![](media/Server%20Menager%20Configuration.png)
+
+The Keepalive settings will be active for all the WebSocket Servers launched by the "WebSocket Server Manager Actor"
+
 ### WebSocket Server Listener Settings
 
 <img src="./media/image2.png" style="width:1.77108in;height:1.25017in"
@@ -186,14 +202,17 @@ In case the WebSocket Server Actor is manually launched the following
 properties are available to configure it (the port must be entered)
 before its launch
 
-<img src="./media/image5.png" style="width:1.81275in;height:0.55216in"
-alt="A close-up of a sign Description automatically generated" />
+![](media/image5.png)
 
-**Listener Settings** specifies the settings for the Server (see
+
+**Listener Settings** specifies the Listener settings for the Server (see
 definition above).
 
 **Handshake timeout** specifies the timeout of the handshake when the
 client establishes a WebSocket connection to the server.
+
+**Keepalive** specifies the Keepalive settings for the Server (see
+definition above).
 
 ### Add Service
 
@@ -244,8 +263,8 @@ we want to send the data
 The following properties of the WebSocket Client actor must be set
 before launching it:
 
-<img src="./media/image9.png" style="width:1.79167in;height:0.91667in"
-alt="A screenshot of a computer Description automatically generated" />
+![](media/image9.png)
+
 
 **WS URI** specifies the URI of the client with the following format:
 
@@ -260,6 +279,9 @@ Msg.lvclass”.*
 
 **Subscriber Enqueuer** specifies the enqueuer of the actor (must be
 created) that subscribes to the WebSocket Client Actor.
+
+**Keepalive** specifies the Keepalive settings for the Client (see
+definition above).
 
 ## Send to Peers
 

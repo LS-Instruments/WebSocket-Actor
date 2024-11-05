@@ -19,7 +19,7 @@ A library implementing a high-level actor-based WebSocket communication. An acto
 
 Look in the example folder for a comprehensive set of code examples covering the full functionality of the library.
 
-## Note About Nomenclature
+## Note About Terminology
 
 Please note that within this library **resource names**, as defined in
 the WebSocket protocol specification, are referred to as **services**.

@@ -7,8 +7,22 @@ Authors: Andrea Vaccaro - David Grollier
 
 A library implementing a high-level actor-based WebSocket communication. An actor can subscribe to a WebSocket Actor (either server or client) to facilitate WebSocket-based communication.
 
-Please note that within this library **resource names** as defined in
-the WebSocket protocol specification are referred to as **services.**
+## Main Features
+
+* Fully Actor Framework Based
+* Full WebSocket Compatibility
+* Support for WebSocket resources
+* Keepalive infrastructure
+* Secure connection capabilities
+
+## Example Code
+
+Look in the example folder for a comprehensive set of code examples covering the full functionality of the library.
+
+## Note About Nomenclature
+
+Please note that within this library **resource names**, as defined in
+the WebSocket protocol specification, are referred to as **services**.
 
 # Library
 
@@ -89,21 +103,15 @@ This abstract message is sent by either the WebSocket Client or by the
 WebSocket Service to the subscriber Actor on four events:
 
 -   Connect
-
 -   Disconnect
-
 -   Message
-
 -   Drop
 
 For each subscriber Actor a concrete subclass of the message should be created by overriding the methods:
 
 -   "On Connect.vi"
-
 -   "On Disconnect.vi"
-
 -   "On Message.vi"
-
 -   "On Drop.vi"
 
 The subscriber actor can program the required action for the

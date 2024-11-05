@@ -17,7 +17,7 @@
 			<Item Name="Echo Broadcast Test With Server Manager.lvlib" Type="Library" URL="../Examples/Echo Broadcast Test With Server Manager/Echo Broadcast Test With Server Manager.lvlib"/>
 			<Item Name="Echo Broadcast Test Without Server Manager.lvlib" Type="Library" URL="../Examples/Echo Broadcast Test Without Server Manager/Echo Broadcast Test Without Server Manager.lvlib"/>
 			<Item Name="Echo Broadcast with External Client.lvlib" Type="Library" URL="../Examples/Echo Broadcast with External Client/Echo Broadcast with External Client.lvlib"/>
-			<Item Name="Echo Reply Test With Server Manager.lvlib" Type="Library" URL="../Examples/Echo Reply Test With Server Manager/Echo Reply Test With Server Manager.lvlib"/>
+			<Item Name="Secure Echo Broadcast Test With Server Manager.lvlib" Type="Library" URL="../Examples/Secure Echo Broadcast Test With Server Manager/Secure Echo Broadcast Test With Server Manager.lvlib"/>
 		</Item>
 		<Item Name="libs" Type="Folder">
 			<Item Name="LV WebSockets.lvlib" Type="Library" URL="/&lt;vilib&gt;/LS Instruments AG/LV-WebSockets/LV WebSockets.lvlib"/>

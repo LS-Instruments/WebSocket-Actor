@@ -1,5 +1,6 @@
 WebSocket Actor Release Notes
 v1.1.0
-- Implement Keepalive functionality whereby a WebSocket client/server checks if the peer is still responding ("Alive") by sending WebSockets Ping messages to the peer on a certain time interval. The peer will answer with a WebSockets Pong message. If the answer is not received within a certain amount timeout the client/server will drop the connection.
+- Implemented Keepalive functionality whereby a WebSocket client/server checks if the peer is still responding ("Alive") by sending WebSockets Ping messages to the peer on a certain time interval. The peer will answer with a WebSockets Pong message. If the answer is not received within a certain amount timeout the client/server will drop the connection.
+- Implemented secure WebSocket capabilities.
 v1.0.0
 - First public release

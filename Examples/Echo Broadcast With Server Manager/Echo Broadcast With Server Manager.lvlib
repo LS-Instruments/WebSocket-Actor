@@ -6,17 +6,17 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="WS Test Client Subscriber" Type="Folder">
-			<Item Name="Client Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Client Subscriber Messages/Client Connection Handler Msg/Client Connection Handler Msg.lvclass"/>
+			<Item Name="Client Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Client Subscriber Messages/Client Connection Handler Msg/Client Connection Handler Msg.lvclass"/>
 		</Item>
 		<Item Name="WS Test Server Subscriber" Type="Folder">
-			<Item Name="Send Packets Msg.lvclass" Type="LVClass" URL="../WS Test Server Subscriber Messages/Send Packets Msg/Send Packets Msg.lvclass"/>
-			<Item Name="Server Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Server Subscriber Messages/Server Connection Handler Msg/Server Connection Handler Msg.lvclass"/>
-			<Item Name="WebSocket Server Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Test Server Subscriber Messages/WebSocket Server Enqueuer Msg/WebSocket Server Enqueuer Msg.lvclass"/>
-			<Item Name="WebSocket Service Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Test Server Subscriber Messages/WebSocket Service Enqueuer Msg/WebSocket Service Enqueuer Msg.lvclass"/>
+			<Item Name="Send Packets Msg.lvclass" Type="LVClass" URL="../WS Server Subscriber Messages/Send Packets Msg/Send Packets Msg.lvclass"/>
+			<Item Name="Server Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Server Subscriber Messages/Server Connection Handler Msg/Server Connection Handler Msg.lvclass"/>
+			<Item Name="WebSocket Server Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Server Subscriber Messages/WebSocket Server Enqueuer Msg/WebSocket Server Enqueuer Msg.lvclass"/>
+			<Item Name="WebSocket Service Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Server Subscriber Messages/WebSocket Service Enqueuer Msg/WebSocket Service Enqueuer Msg.lvclass"/>
 		</Item>
 	</Item>
 	<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
 	<Item Name="Sender Loop.lvclass" Type="LVClass" URL="../Sender Loop/Sender Loop.lvclass"/>
-	<Item Name="WS Test Client Subscriber.lvclass" Type="LVClass" URL="../WS Test Client Subscriber/WS Test Client Subscriber.lvclass"/>
-	<Item Name="WS Test Server Subscriber.lvclass" Type="LVClass" URL="../WS Test Server Subscriber/WS Test Server Subscriber.lvclass"/>
+	<Item Name="WS Client Subscriber.lvclass" Type="LVClass" URL="../WS Client Subscriber/WS Client Subscriber.lvclass"/>
+	<Item Name="WS Server Subscriber.lvclass" Type="LVClass" URL="../WS Server Subscriber/WS Server Subscriber.lvclass"/>
 </Library>

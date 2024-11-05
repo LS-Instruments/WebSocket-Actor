@@ -6,14 +6,14 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="WS Test Client" Type="Folder">
-			<Item Name="Client Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Client Messages/Client Connection Handler Msg/Client Connection Handler Msg.lvclass"/>
+			<Item Name="Client Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Client Messages/Client Connection Handler Msg/Client Connection Handler Msg.lvclass"/>
 		</Item>
 		<Item Name="WS Test Server" Type="Folder">
-			<Item Name="Server Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Server Messages/Server Connection Handler Msg/Server Connection Handler Msg.lvclass"/>
-			<Item Name="WebSocket Service Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Test Server Messages/WebSocket Service Enqueuer Msg/WebSocket Service Enqueuer Msg.lvclass"/>
+			<Item Name="Server Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Server Messages/Server Connection Handler Msg/Server Connection Handler Msg.lvclass"/>
+			<Item Name="WebSocket Service Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Server Messages/WebSocket Service Enqueuer Msg/WebSocket Service Enqueuer Msg.lvclass"/>
 		</Item>
 	</Item>
 	<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
-	<Item Name="WS Test Client.lvclass" Type="LVClass" URL="../WS Test Client/WS Test Client.lvclass"/>
-	<Item Name="WS Test Server.lvclass" Type="LVClass" URL="../WS Test Server/WS Test Server.lvclass"/>
+	<Item Name="WS Client.lvclass" Type="LVClass" URL="../WS Client/WS Client.lvclass"/>
+	<Item Name="WS Server.lvclass" Type="LVClass" URL="../WS Server/WS Server.lvclass"/>
 </Library>

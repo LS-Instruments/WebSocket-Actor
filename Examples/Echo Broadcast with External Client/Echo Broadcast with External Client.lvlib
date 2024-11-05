@@ -6,10 +6,10 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Messages for this Actor" Type="Folder">
 		<Item Name="WS Test Server" Type="Folder">
-			<Item Name="Server Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Test Server Messages/Server Connection Handler Msg/Server Connection Handler Msg.lvclass"/>
-			<Item Name="WebSocket Server Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Test Server Messages/WebSocket Server Enqueuer Msg/WebSocket Server Enqueuer Msg.lvclass"/>
+			<Item Name="Server Connection Handler Msg.lvclass" Type="LVClass" URL="../WS Server Messages/Server Connection Handler Msg/Server Connection Handler Msg.lvclass"/>
+			<Item Name="WebSocket Server Enqueuer Msg.lvclass" Type="LVClass" URL="../WS Server Messages/WebSocket Server Enqueuer Msg/WebSocket Server Enqueuer Msg.lvclass"/>
 		</Item>
 	</Item>
 	<Item Name="Launcher.vi" Type="VI" URL="../Launcher.vi"/>
-	<Item Name="WS Test Server.lvclass" Type="LVClass" URL="../WS Test Server/WS Test Server.lvclass"/>
+	<Item Name="WS Server.lvclass" Type="LVClass" URL="../WS Server/WS Server.lvclass"/>
 </Library>

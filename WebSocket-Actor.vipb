@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-05 18:59:21" Creator="AndreaVaccaro(LSInst" Comments="" ID="ae437f75ee9b78bad5902a13ab02693e">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-05 23:18:06" Creator="AndreaVaccaro(LSInst" Comments="" ID="1f979ef91bea105a374ba49d20cc4d83">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_WebSocket_Actor</Package_File_Name>
-    <Library_Version>1.1.0.1</Library_Version>
+    <Library_Version>1.1.0.4</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -37,7 +37,18 @@
     <VI_Package_Configuration_File>WebSocket-Actor.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>A high-level actor-based implementation of the WebSocket protocol</One_Line_Description_Summary>
-      <Description>A library implementing a high-level actor-based WebSocket communication. An actor can subscribe to a WebSocket Actor (either server or client) to facilitate WebSocket-based communication.</Description>
+      <Description>A library implementing high-level actor-based WebSocket communication. An actor can subscribe to a WebSocket Actor (either server or client) to facilitate WebSocket-based communication.
+
+Main Features
+
+* Fully Actor Framework Based
+* Full WebSocket Compatibility
+* Support for WebSocket resources
+* Keepalive infrastructure
+* Secure connection capabilities
+
+Look at the LabVIEW example folder for a comprehensive set of examples.
+</Description>
       <Copyright/>
       <Packager>Andrea Vaccaro</Packager>
       <URL>https://github.com/LS-Instruments/WebSocket-Actor</URL>
@@ -127,6 +138,12 @@
       <Destination_Overrides>
         <Path>README.md</Path>
         <Destination>4</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Examples/Certificates</Path>
+        <Destination>1</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
@@ -378,7 +395,7 @@
         <Path>WebSocket Actor\WebSocket Server\typedefs\Listener Settings.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>ED1EDBBF8D1EAB2F18FA01138BB97A2A</GUID>
+      <GUID>98B297185055D1F9CFCDA212A6CF2CE5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -427,7 +444,7 @@
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Server-Service Enqueuer Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D1CFD878DC8470A0D33625E54EBC19C6</GUID>
+      <GUID>1039AAB0FC2488E1979CE21171DA0E3E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -504,7 +521,7 @@
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>143CCB2B977586B8D890D04A9A35FB88</GUID>
+      <GUID>FE6EF929AB06307DE1BE170A0CEC0AD7</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

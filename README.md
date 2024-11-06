@@ -144,7 +144,16 @@ Before launch the "Server Manager Actor" can be configured with the Keepalive se
 
 ![](media/Server%20Menager%20Configuration.png)
 
-The Keepalive settings will be active for all the WebSocket Servers launched by the "WebSocket Server Manager Actor"
+**Keepalive** The Keepalive settings will be active for all the WebSocket Servers launched by the "WebSocket Server Manager Actor"
+
+**Certificate Chain** specifies an array of Distinguished Encoding Rules (DER) certificates. The certificates must be supplied depth-first: the server's certificate, followed by the Certificate Authority (CA) that signs the certificate of the server, on up to the root CA. For more details see LabVIEW TLS examples. 
+
+**Private Key** a byte array containing the private key of the servers started by the server manager. For more details see LabVIEW TLS examples. 
+
+**Secure** If set to TRUE all server started by the server manager will be providing only secure connections. In this case you will need to suitably configure at least the following parameters: **Certificate Chain**, **Private Key**.
+
+**Load OS trusted CAs** specifies whether to load Certificate Authority (CA) certificates trusted by the OS for the secure connection.
+
 
 ### WebSocket Server Listener Settings
 
@@ -222,6 +231,14 @@ client establishes a WebSocket connection to the server.
 **Keepalive** specifies the Keepalive settings for the Server (see
 definition above).
 
+**Certificate Chain** specifies an array of Distinguished Encoding Rules (DER) certificates. The certificates must be supplied depth-first: the server's certificate, followed by the Certificate Authority (CA) that signs the certificate of the server, on up to the root CA. For more details see LabVIEW TLS examples. 
+
+**Private Key** a byte array containing the server private key. For more details see LabVIEW TLS examples. 
+
+**Secure** If set to TRUE the server will be providing only secure connections. In this case you will need to suitably configure at least the following parameters: **Certificate Chain**, **Private Key**.
+
+**Load OS trusted CAs** For secure connections specifies whether to load Certificate Authority (CA) certificates trusted by the OS for the secure connection.
+
 ### Add Service
 
 <img src="./media/image6.png" style="width:4.77541in;height:3.01693in"
@@ -276,7 +293,11 @@ before launching it:
 
 **WS URI** specifies the URI of the client with the following format:
 
-*ws://hostname:port/service*
+**plain connections**: *ws://hostname:port/service*
+
+**secure connections**: *wss://hostname:port/service*
+
+for secure connections one has to configure the **Certificate** and **Load OS trusted CAs**, see below for description of these parameters.
 
 **Timeout (ms)** is the timeout to establish the connection to the
 server. A value of –1 indicates to wait indefinitely.
@@ -290,6 +311,10 @@ created) that subscribes to the WebSocket Client Actor.
 
 **Keepalive** specifies the Keepalive settings for the Client (see
 definition above).
+
+**Certificate** Certificate Authority (CA) certificate input as a byte array. For more details see LabVIEW TLS examples. 
+
+**Load OS trusted CAs** For secure connections specifies whether to load Certificate Authority (CA) certificates trusted by the OS for the secure connection.
 
 ## Send to Peers
 

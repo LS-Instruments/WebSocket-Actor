@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-06 17:07:00" Creator="AndreaVaccaro(LSInst" Comments="" ID="b3e4d0f1f38f8c9ce80b2b4b2d67b3ea">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-11 12:50:25" Creator="AndreaVaccaro(LSInst" Comments="" ID="b33627f883a54e1edb7967c0008d7def">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_WebSocket_Actor</Package_File_Name>
-    <Library_Version>1.1.0.5</Library_Version>
+    <Library_Version>1.1.0.8</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -54,7 +54,9 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
       <URL>https://github.com/LS-Instruments/WebSocket-Actor</URL>
       <Release_Notes>- Implemented Keepalive functionality whereby a WebSocket client/server checks if the peer is still responding ("Alive") by sending WebSockets Ping messages to the peer on a certain time interval. The peer will answer with a WebSockets Pong message. If the answer is not received within a certain amount timeout the client/server will drop the connection.
 
-- Implemented secure WebSocket connection capabilities.</Release_Notes>
+- Implemented secure WebSocket connection capabilities.
+
+- Implemented error generation, hanlding and reporting</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -74,7 +76,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
       </Custom_Probes>
       <Custom_Errors>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path/>
+        <Path>&lt;project&gt;\errors</Path>
       </Custom_Errors>
       <Help_Files>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
@@ -150,6 +152,12 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
       <Destination_Overrides>
         <Path>README.pdf</Path>
         <Destination>4</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>WebSocket-Actors-errors.txt</Path>
+        <Destination>3</Destination>
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
@@ -401,7 +409,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Server\typedefs\Listener Settings.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>29F6B387029E479AA883AC9EB1890BB7</GUID>
+      <GUID>3D29237F1F830F64A65D4CC54E681623</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -450,7 +458,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Server-Service Enqueuer Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7D61255C624183485B8E083322FA51B6</GUID>
+      <GUID>B8091C768D22CE8D9D2C4697A9C9DDB4</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -527,7 +535,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>74C92DD7D877D77541CF230C11473A09</GUID>
+      <GUID>A4368F4DC6EF7D5C7990CF2C8C66F672</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

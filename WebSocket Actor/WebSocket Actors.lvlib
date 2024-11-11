@@ -46,6 +46,7 @@
 			<Item Name="Add Client Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/Add Client Msg/Add Client Msg.lvclass"/>
 			<Item Name="WebSocket Service Connection Handler Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/WebSocket Service Connection Handler Msg/WebSocket Service Connection Handler Msg.lvclass"/>
 		</Item>
+		<Item Name="Write Listener Down Msg.lvclass" Type="LVClass" URL="../WebSocket Server Messages/Write Listener Down Msg/Write Listener Down Msg.lvclass"/>
 	</Item>
 	<Item Name="Palette" Type="Folder">
 		<Item Name="Open Examples.vi" Type="VI" URL="../WebSocket Actor Palette/Open Examples.vi"/>

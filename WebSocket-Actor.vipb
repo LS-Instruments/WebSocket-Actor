@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-11 12:50:25" Creator="AndreaVaccaro(LSInst" Comments="" ID="b33627f883a54e1edb7967c0008d7def">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-11 13:43:39" Creator="AndreaVaccaro(LSInst" Comments="" ID="96f1c4342f2a2ad4dc1b779bdc0d6cd8">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_WebSocket_Actor</Package_File_Name>
-    <Library_Version>1.1.0.8</Library_Version>
+    <Library_Version>1.1.0.9</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -409,7 +409,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Server\typedefs\Listener Settings.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3D29237F1F830F64A65D4CC54E681623</GUID>
+      <GUID>DC2C81D4ED07D5FED4778C7E989521D9</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -458,7 +458,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Server-Service Enqueuer Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B8091C768D22CE8D9D2C4697A9C9DDB4</GUID>
+      <GUID>AC6F7C38337730B4B47266109F7BE110</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -535,7 +535,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A4368F4DC6EF7D5C7990CF2C8C66F672</GUID>
+      <GUID>16F1928E68EE6DBAD1033183FA2B55F1</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

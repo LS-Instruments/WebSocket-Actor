@@ -1,7 +1,9 @@
 
 # WebSocket Actor
 
-Authors: Andrea Vaccaro - David Grollier
+## Authors
+Documentation: Andrea Vaccaro - David Grollier
+Code: Andrea Vaccaro
 
 # Description
 
@@ -33,65 +35,26 @@ alt="A screenshot of a computer program Description automatically generated" />
 
 ## WebSocket Client.lvclass
 
-It forwards packets received from the connected WebSocket Service to its
-subscriber as "WebSocket Connection Handler Msg" messages. It allows its
-subscriber to send data to a specified service to which the WebSocket
-client is connected ("Send to Peer Msg" message" message of the parent
-"WebSocket Connection" class). Before starting the actor, the subscriber
-must provide, by means of suitable properties, a data handler message in
-form of a concrete implementation of the "WebSocket Connection Handler
-Msg" abstract message used to handle the connection events corresponding
-to the WebSocket communication, a concrete implementation of the
-"WebSocket Server-Service Enqueuer Msg" abstract message used to receive
-the WebSocket service actor enqueuer, and the WebSocket service URI to
-which the client should connect.
+It forwards packets received from the connected WebSocket Service to its subscriber as "WebSocket Connection Handler Msg" messages. It allows its subscriber to send data to a specified service to which the WebSocket
+client is connected ("Send to Peer Msg" message" message of the parent "WebSocket Connection" class). Before starting the actor, the subscriber must provide, by means of suitable properties, a data handler message in
+form of a concrete implementation of the "WebSocket Connection Handler Msg" abstract message used to handle the connection events corresponding to the WebSocket communication, a concrete implementation of the
+"WebSocket Server-Service Enqueuer Msg" abstract message used to receive the WebSocket service actor enqueuer, and the WebSocket service URI to which the client should connect.
 
 ## WebSocket Server Manager.lvclass
 
-This actor's role is solely that of launching and managing the stop of
-"WebSocket Server" actors listening on at a specific port and interface
-address ("Launch Server Msg" and "Stop Server Msg" messages). The actor
-will ensure that the launched "WebSocket Server" actor doesn’t conflict on
-interface and port resources. If the server is already running at that
-port or on the specified interface the method sends just the server
-enqueuer to the client. If the server is not running it will be
-launched.
+This actor's role is solely that of launching and managing the stop of "WebSocket Server" actors listening on at a specific port and interface address ("Launch Server Msg" and "Stop Server Msg" messages). The actor
+will ensure that the launched "WebSocket Server" actor doesn’t conflict on interface and port resources. If the server is already running at that port or on the specified interface the method sends just the server
+enqueuer to the client. If the server is not running it will be launched.
 
 ## WebSocket Server.lvclass
 
-Defines a WebSocket Server characterized by an interface and a port on
-which it listens. Allows for the definition of WebSocket Services.
-Services can be defined by the server subscriber by sending the "Add
-Service" message to the actor. The subscriber must provide a concrete
-implementation of the "WebSocket Server-Service Enqueuer Msg" abstract
-message used to let its subscriber receive the WebSocket service actor
-enqueuer and a data handler message in form of a concrete implementation
-of the "WebSocket Connection Handler Msg" abstract message used to
-handle the connection events corresponding to the WebSocket
-communication. For each service defined a "WebSocket Service" actor is
-started that will send data to the subscriber that has defined the
-service. The actor listens according to the server specifications on a
-port and on an interface if not all, when a connection is established,
-the actor performs the WebSocket handshake. If the service requested is
-defined in this server, it informs the WebSocket service Actor who will
-start a corresponding WebSocket connection actor. If either the service
-is not defined, or the handshake fails, we do nothing, the WebSocket
-protocol will take care of communicating the failure to the client.
+Defines a WebSocket Server characterized by an interface and a port on which it listens. Allows for the definition of WebSocket Services. Services can be defined by the server subscriber by sending the "Add
+Service" message to the actor. The subscriber must provide a concrete implementation of the "WebSocket Server-Service Enqueuer Msg" abstract message used to let its subscriber receive the WebSocket service actor
+enqueuer and a data handler message in form of a concrete implementation of the "WebSocket Connection Handler Msg" abstract message used to handle the connection events corresponding to the WebSocket communication. For each service defined a "WebSocket Service" actor is started that will send data to the subscriber that has defined the service. The actor listens according to the server specifications on a port and on an interface if not all, when a connection is established, the actor performs the WebSocket handshake. If the service requested is defined in this server, it informs the WebSocket service Actor who will start a corresponding WebSocket connection actor. If either the service is not defined, or the handshake fails, we do nothing, the WebSocket protocol will take care of communicating the failure to the client.
 
 ## WebSocket Service.lvclass
 
-It forwards packets received from the connected "WebSocket Client" actors to its
-subscriber actor as "WebSocket Connection Handler Msg" messages. It
-allows the subscriber to send data to a specified client ("Send to Peer
-Msg" message of the parent "WebSocket Connection" class) or to all
-connected clients (“Broadcast Msg” message). When launching the actor by
-means of the “WebSocket Server.lvclass” actor, the subscriber must
-provide a data handler message in form of a concrete implementation of
-the "WebSocket Connection Handler Msg" abstract message used to handle
-the connection events corresponding to the WebSocket communication and a
-concrete implementation of the "WebSocket Server-Service Enqueuer Msg"
-abstract message used to let the server subscriber actor receive the
-WebSocket service actor enqueuer.
+It forwards packets received from the connected "WebSocket Client" actors to its subscriber actor as "WebSocket Connection Handler Msg" messages. It allows the subscriber to send data to a specified client ("Send to Peer Msg" message of the parent "WebSocket Connection" class) or to all connected clients (“Broadcast Msg” message). When launching the actor by means of the “WebSocket Server.lvclass” actor, the subscriber must provide a data handler message in form of a concrete implementation of the "WebSocket Connection Handler Msg" abstract message used to handle the connection events corresponding to the WebSocket communication and a concrete implementation of the "WebSocket Server-Service Enqueuer Msg" abstract message used to let the server subscriber actor receive the WebSocket service actor enqueuer.
 
 ## Abstract messages
 
@@ -114,39 +77,34 @@ For each subscriber Actor a concrete subclass of the message should be created b
 -   "On Message.vi"
 -   "On Drop.vi"
 
-The subscriber actor can program the required action for the
-corresponding event.
+The subscriber actor can program the required action for the corresponding event.
 
 ### WebSocket Server-Service Enqueuer Msg.lvclass
 
-This abstract message is used either by the **WebSocket Server Manager** actor or
-by the **WebSocket Server** actor to send the just launched/added Server/Service
-Enqueuer to the subscriber actor requesting the operation. Each
-subscriber actor requesting the operation should subclass this message
-and then override the Do.vi wherein the Server/Service Enqueuer can be read from the suitable abstract message property and stored in the subscriber actor.
+This abstract message is used either by the **WebSocket Server Manager** actor or by the **WebSocket Server** actor to send the just launched/added Server/Service Enqueuer to the subscriber actor requesting the operation. Each subscriber actor requesting the operation should subclass this message and then override the Do.vi wherein the Server/Service Enqueuer can be read from the suitable abstract message property and stored in the subscriber actor.
 
 ## Errors
 All custom error generated by this library are forwarded to the appropriate subscriber actor to be handled by the "Handle Error" method. If such method is not overridden by the subscriber actor, the actor will stop when the subscribed actor generates an errors. All the errors generated the connection level will result 
 
 The custom errors defined by this library are the following:
 
-### 512000: The WebSocket connection dropped for unknown reasons.**
+### 512000: The WebSocket connection dropped for unknown reasons.
 
-This error is generated when the connection is dropped for an unknown reason most likely related to problems with the TCP/IP connection. In such cases a "Drop" type "WebSocket Connection Handler Msg" concrete message will be fired, allowing the subscriber (either a to a "WebSocket Client" actor or a "WebSocket Server" actor) to react to this situation by overriding the Drop method within the message concrete implementation.  Please note that if the Keepalive system is activated and a peer doesn't reply within the specified timeout, no error is generated. Rather, only the "Drop" type message is fired.
+This error is generated when the connection is dropped for an unknown reason most likely related to problems with the TCP/IP connection. In such cases a "Drop" type "WebSocket Connection Handler Msg" concrete message will be fired, allowing the subscriber (either a to a "WebSocket Client" actor or TO a "WebSocket Service" actor) to react to this situation by overriding the Drop method within the message concrete implementation.  Please note that if the Keepalive system is activated and a peer doesn't reply within the specified timeout, no error is generated. Rather, only the "Drop" type message is fired.
 
 ### 512001: The WebSocket Server could not establish a connection to the peer for unknown reasons.
 
-This error is generated by the "WebSocket Server" actor when he is not able to establish a connection to the WebSocket client. In such cases the is presumed that the "WebSocket Server" actor is still able to establish new connections if requested.
+This error is generated by the "WebSocket Server" actor when it is not able to establish a connection to the WebSocket client. In such cases the is presumed that the "WebSocket Server" actor is still able to establish new connections if requested.
 
 ### 512002: The WebSocket Server listener could not be created. Server is going to stop.
-This is generated upon a "WebSocket Server" actor launch in case a TCP/IP listener cannot be created. In such case the Actor will stop.
+This is generated upon a "WebSocket Server" actor launch in case a TCP/IP listener cannot be created. In such case the "WebSocket Server" actor will stop.
 
 ### 512003: The WebSocket Server listener became invalid for unknown reasons. The WebSocket Server is not accepting the definition of any new server.
 
-This is generated within the lifetime of a "WebSocket Server" actor when the TCP/IP listener becomes invalid. In such case the Actor will not stop, but will not be accepting the addition of any new service from the subscriber.
+This is generated within the lifetime of a "WebSocket Server" actor when the TCP/IP listener becomes invalid. In such case the "WebSocket Server" actor will not stop, but will not be accepting the addition of any new services from the subscriber.
 
 ### 512004: The WebSocket Server is not accepting the definition of any new service.
-In case one tries to add a service to a "WebSocket Server" actor that stopped to accept the addition of new services (see Error 512004) the subscriber demanding an addition will receive this error.
+In case one tries to add a service to a "WebSocket Server" actor that stopped accepting the addition of new services (see Error 512003) the subscriber demanding an addition will receive this error.
 
 
 # API
@@ -183,76 +141,55 @@ Before launch the "Server Manager Actor" can be configured with the Keepalive se
 <img src="./media/image2.png" style="width:1.77108in;height:1.25017in"
 alt="A screenshot of a computer Description automatically generated" />
 
-**timeout ms** specifies the time, in milliseconds, that the function
-waits for a connection. If a connection is not established in the
-specified time, the function returns an error. The default value is –1,
-which indicates to wait indefinitely.
+**timeout ms** specifies the time, in milliseconds, that the function waits for a connection. If a connection is not established in the specified time, the function returns an error. The default value is –1,
+which indicates to wait indefinitely. 
 
-**resolve remote address** indicates whether to call the IP To String
-function on the remote address.
+**resolve remote address** indicates whether to call the IP To String function on the remote address.
 
-**net address** specifies on which network address to listen. Specifying
-an address is useful if you have more than one network card, such as two
-Ethernet cards, and want to listen only on the card with the specified
-address. If you do not specify a network address, LabVIEW listens on all
-network addresses.
+**net address** specifies on which network address to listen. Specifying an address is useful if you have more than one network card, such as two Ethernet cards, and want to listen only on the card with the specified address. If you do not specify a network address, LabVIEW listens on all network addresses.
 
-**port** is the port number on which you want to listen for a
-connection.
+**port** is the port number on which you want to listen for a connection.
 
 ### Launch Server
 
 <img src="./media/image3.png" style="width:4.77541in;height:3.16694in"
 alt="A screenshot of a computer Description automatically generated" />
 
-**Message Enqueuer in** specifies the enqueuer of the WebSocket Server
-Manager actor.
+**Message Enqueuer in** specifies the enqueuer of the WebSocket Server Manager actor.
 
 **Listener Settings** specifies the listener settings for the Server.
 
 **Handshake timeout** specifies the timeout of the handshake when the client establishes a WebSocket connection to the server.
 
-**Receive Server Enqueuer Handler** specifies the concrete message (to be created) child of the abstract message “*WebSocket Server-Service
-Enqueuer Msg.lvclass*”.
+**Receive Server Enqueuer Handler** specifies the concrete message (to be created) child of the abstract message “*WebSocket Server-Service Enqueuer Msg.lvclass*”.
 
 ### Stop a Server
 
 <img src="./media/image4.png" style="width:4.5754in;height:2.87525in"
 alt="A computer screen shot of a message Description automatically generated" />
 
-**Subscriber Enqueuer** specifies the enqueuer of the actor that has
-subscribed to the previously launched "WebSocket Server" actor.
+**Subscriber Enqueuer** specifies the enqueuer of the actor that has subscribed to the previously launched "WebSocket Server" actor.
 
-**Message Enqueuer in** specifies the enqueuer of the "WebSocket Server
-Manager" actor to be stopped.
+**Message Enqueuer in** specifies the enqueuer of the "WebSocket Server Manager" actor to be stopped.
 
-**Listener Settings** specifies the listener settings for the previously
-launched "WebSocket Server" actor.
+**Listener Settings** specifies the listener settings for the previously launched "WebSocket Server" actor.
 
-**Handshake timeout** specifies the timeout of the handshake when the
-client establishes a WebSocket connection to the server.
+**Handshake timeout** specifies the timeout of the handshake when the client establishes a WebSocket connection to the server.
 
-**Receive Server Enqueuer Handler** specifies the concrete message (to
-be created) child of the abstract message “*WebSocket Server-Service
-Enqueuer Msg.lvclass*”.
+**Receive Server Enqueuer Handler** specifies the concrete message (to be created) child of the abstract message “*WebSocket Server-Service Enqueuer Msg.lvclass*”.
 
 ## WebSocket Server
 
-In case the "WebSocket Server" actor is manually launched the following
-properties are available to configure it (the port must be entered)
-before its launch
+In case the "WebSocket Server" actor is manually launched the following properties are available to configure it (the port must be entered) before its launch
 
 ![](media/image5.png)
 
 
-**Listener Settings** specifies the Listener settings for the Server (see
-definition above).
+**Listener Settings** specifies the Listener settings for the Server (see definition above).
 
-**Handshake timeout** specifies the timeout of the handshake when the
-client establishes a WebSocket connection to the server.
+**Handshake timeout** specifies the timeout of the handshake when the client establishes a WebSocket connection to the server.
 
-**Keepalive** specifies the Keepalive settings for the Server (see
-definition above).
+**Keepalive** specifies the Keepalive settings for the Server (see definition above).
 
 **Certificate Chain** specifies an array of Distinguished Encoding Rules (DER) certificates. The certificates must be supplied depth-first: the server's certificate, followed by the Certificate Authority (CA) that signs the certificate of the server, on up to the root CA. For more details see LabVIEW TLS examples. 
 
@@ -267,20 +204,15 @@ definition above).
 <img src="./media/image6.png" style="width:4.77541in;height:3.01693in"
 alt="A computer screen shot of a message Description automatically generated" />
 
-**Receive Connection Enqueuer** specifies the concrete message (to be
-created) child of the abstract message “*WebSocket Server-Service
-Enqueuer Msg.lvclass”.*
+**Receive Connection Enqueuer** specifies the concrete message (to be created) child of the abstract message “*WebSocket Server-Service Enqueuer Msg.lvclass”.*
 
-**Message Enqueuer in** specifies the enqueuer of the "WebSocket Server"
-actor.
+**Message Enqueuer in** specifies the enqueuer of the "WebSocket Server" actor.
 
 **Service Name** specifies the name of the service.
 
 **Subscriber Enqueuer** specifies the enqueuer of the actor that subscribes to the "WebSocket Server" actor.
 
-**WebSocket Data Handler** specifies the concrete message (to be
-created) child of the abstract message “*WebSocket Connection Handler
-Msg.lvclass”.*
+**WebSocket Data Handler** specifies the concrete message (to be created) child of the abstract message “*WebSocket Connection Handler Msg.lvclass”.*
 
 ## WebSocket Service
 
@@ -288,8 +220,7 @@ Msg.lvclass”.*
 
 <img src="./media/image7.png" style="width:4.17536in;height:2.16685in"
 alt="A screen shot of a computer Description automatically generated" />  
-**Message Enqueuer in** specifies the enqueuer of the WebSocket Service
-actor.
+**Message Enqueuer in** specifies the enqueuer of the WebSocket Service actor.
 
 **Data** specifies the data to be sent.
 
@@ -298,18 +229,15 @@ actor.
 <img src="./media/image8.png" style="width:4.14203in;height:2.34187in"
 alt="A computer screen shot of a message Description automatically generated" />
 
-**Message Enqueuer in** specifies the enqueuer of the WebSocket Service
-actor.
+**Message Enqueuer in** specifies the enqueuer of the WebSocket Service actor.
 
 **Data** specifies the data to be sent.
 
-**Client ID** ID that identifies the specific WebSocket client to which
-we want to send the data
+**Client ID** ID that identifies the specific WebSocket client to which we want to send the data
 
 ## WebSocket Client 
 
-The following properties of the "WebSocket Client" actor must be set
-before launching it:
+The following properties of the "WebSocket Client" actor must be set before launching it:
 
 ![](media/image9.png)
 
@@ -322,18 +250,13 @@ before launching it:
 
 for secure connections one has to configure the **Certificate** and **Load OS trusted CAs**, see below for description of these parameters.
 
-**Timeout (ms)** is the timeout to establish the connection to the
-server. A value of –1 indicates to wait indefinitely.
+**Timeout (ms)** is the timeout to establish the connection to the server. A value of –1 indicates to wait indefinitely.
 
-**WebSocket Data Handler** specifies the concrete message (to be
-created) child of the abstract message “*WebSocket Connection Handler
-Msg.lvclass”.*
+**WebSocket Data Handler** specifies the concrete message (to be created) child of the abstract message “*WebSocket Connection Handler Msg.lvclass”.*
 
-**Subscriber Enqueuer** specifies the enqueuer of the actor (must be
-created) that subscribes to the "WebSocket Client" actor.
+**Subscriber Enqueuer** specifies the enqueuer of the actor (must be created) that subscribes to the "WebSocket Client" actor.
 
-**Keepalive** specifies the Keepalive settings for the Client (see
-definition above).
+**Keepalive** specifies the Keepalive settings for the Client (see definition above).
 
 **Certificate** Certificate Authority (CA) certificate input as a byte array. For more details see LabVIEW TLS examples. 
 
@@ -344,8 +267,7 @@ definition above).
 <img src="./media/image10.png" style="width:4.20036in;height:2.6419in"
 alt="A computer screen shot of a message Description automatically generated" />
 
-**Message Enqueuer in** specifies the enqueuer of the WebSocket Client
-actor.
+**Message Enqueuer in** specifies the enqueuer of the WebSocket Client actor.
 
 **Data Format (Text)** Specifies an Enum allowing to specify if the data format is either “Text” or “Binary”.
 

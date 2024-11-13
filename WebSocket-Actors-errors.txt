@@ -2,10 +2,6 @@
 <nidocument>
 <nicomment>
 Custom error codes defined by the "WebSocket-Actors" library.
-
-
-
-
 <nifamily familyname="WebSocket-Actors" displayname="WebSocket-Actors">
 </nifamily>
 </nicomment>
@@ -23,5 +19,14 @@ The WebSocket Server listener became invalid for unknown reasons. The WebSocket 
 </nierror>
 <nierror code="512004">
 The WebSocket Server is not accepting the definition of any new service.
+</nierror>
+<nierror code="512005">
+The WebSocket Server Manager cannot launch the specified WebSocket Server. Server already running.
+</nierror>
+<nierror code="512006">
+The WebSocket Server Manager cannot stop the specified WebSocket Server. Server not running.
+</nierror>
+<nierror code="512007">
+The WebSocket Server cannot add the specified WebSocket Service. Service already running.
 </nierror>
 </nidocument>

@@ -2,7 +2,7 @@
 # WebSocket Actor
 
 ## Authors
-Documentation: Andrea Vaccaro - David Grollier
+Documentation: Andrea Vaccaro, David Grollier  
 Code: Andrea Vaccaro
 
 # Description
@@ -19,7 +19,7 @@ A library implementing a high-level actor-based WebSocket communication. An acto
 
 ## Example Code
 
-Look in the example folder for a comprehensive set of code examples covering the full functionality of the library.
+Look in the example folder for a comprehensive set of code examples covering the full functionality of the library. Within the source tree the examples can be found at the path `./Examples`. When installing the VIPM package you will find the examples at the path `(LabVIEW Root Path)/examples/LS Instruments AG/WebSocket-Actor`
 
 ## Note About Terminology
 
@@ -106,16 +106,16 @@ This is generated within the lifetime of a "WebSocket Server" actor when the TCP
 #### 512004: The WebSocket Server is not accepting the definition of any new service.
 In case one tries to add a service to a "WebSocket Server" actor that stopped accepting the addition of new services (see Error 512003) this error is generated  and forwarded to the subscriber of the "WebSocket Server" actor.
 
-### Errors
-The following error, when triggered, are reported to the subscriber by means of the concrete implementation of the "WebSocket Server-Service Enqueuer Msg.lvclass" abstract message.
+### Other Errors
+The following errors, when triggered, are reported to the subscriber by means of the concrete implementation of the "WebSocket Server-Service Enqueuer Msg.lvclass" abstract message.
 
-#### 512005" The WebSocket Server Manager cannot launch the specified WebSocket Server. Server already running.
+#### 512005: The WebSocket Server Manager cannot launch the specified WebSocket Server. Server already running.
 When launching a "WebSocket Server" actor, the "WebSocket Server Manager" found that a server with the specified listener settings is already running.
 
-#### 512006" The WebSocket Server Manager cannot stop the specified WebSocket Server. Server not running.
+#### 512006: The WebSocket Server Manager cannot stop the specified WebSocket Server. Server not running.
 When stopping a "WebSocket Server" actor, the "WebSocket Server Manager" found that a server with the specified listener settings is not running.
 
-#### 512007" The WebSocket Server cannot add the specified WebSocket Service. Service already running.
+#### 512007: The WebSocket Server cannot add the specified WebSocket Service. Service already running.
 When adding a "WebSocket Service" to a "WebSocket Server" the "WebSocket Server" actor found that a service with the specified service name already running.
 
 # API

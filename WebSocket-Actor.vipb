@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-13 11:29:54" Creator="AndreaVaccaro(LSInst" Comments="" ID="5d2dcdad978ddb072e99f29e84e28fb4">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-14 22:20:03" Creator="AndreaVaccaro(LSInst" Comments="" ID="dbbfb17046a03e098af6801e25fee804">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_WebSocket_Actor</Package_File_Name>
-    <Library_Version>1.1.0.11</Library_Version>
+    <Library_Version>1.1.0.13</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -19,10 +19,12 @@
     <Package_Dependencies>
       <External_Dependencies>gpower_lib_error &gt;= 2014.0.0.38</External_Dependencies>
       <External_Dependencies>ls_instruments_ag_lib_lv_websockets &gt;= 1.8.0.5</External_Dependencies>
+      <External_Dependencies>mgi_lib_error_handling &gt;= 1.1.1.3</External_Dependencies>
       <External_Dependencies>oglib_error &gt;= 6.0.0.26</External_Dependencies>
       <External_Dependencies>oglib_time &gt;= 6.0.1.6</External_Dependencies>
       <Direct_Dependencies>gpower_lib_error-2014.0.0.38</Direct_Dependencies>
       <Direct_Dependencies>ls_instruments_ag_lib_lv_websockets-1.8.0.5</Direct_Dependencies>
+      <Direct_Dependencies>mgi_lib_error_handling-1.1.1.3</Direct_Dependencies>
       <Direct_Dependencies>oglib_error-6.0.0.26</Direct_Dependencies>
       <Direct_Dependencies>oglib_time-6.0.1.6</Direct_Dependencies>
     </Package_Dependencies>
@@ -409,7 +411,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Server\typedefs\Listener Settings.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EBD15B410FF1A40DECF962C6EEF433D6</GUID>
+      <GUID>108BAB510097E75AC39E60BF5710AD80</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -458,7 +460,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Server-Service Enqueuer Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1A52F5CA9EFA7C4E8808442BE395AA7E</GUID>
+      <GUID>EF54F356D47ADF351DFB24EBC47D8EEA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -535,7 +537,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3EF7DB6F09EE95AA9AAD4E6AAE3BB242</GUID>
+      <GUID>C68417F2AB29244DB5763828CB588249</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

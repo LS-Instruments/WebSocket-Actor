@@ -40,13 +40,13 @@
 		</Item>
 		<Item Name="WebSocket Server" Type="Folder">
 			<Item Name="Add Client to Service Msg.lvclass" Type="LVClass" URL="../WebSocket Server Messages/Add Client to Service Msg/Add Client to Service Msg.lvclass"/>
+			<Item Name="Write Listener Down Msg.lvclass" Type="LVClass" URL="../WebSocket Server Messages/Write Listener Down Msg/Write Listener Down Msg.lvclass"/>
 			<Item Name="Write listener ID Msg.lvclass" Type="LVClass" URL="../WebSocket Server Messages/Write listener ID Msg/Write listener ID Msg.lvclass"/>
 		</Item>
 		<Item Name="Websocket Service" Type="Folder">
 			<Item Name="Add Client Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/Add Client Msg/Add Client Msg.lvclass"/>
 			<Item Name="WebSocket Service Connection Handler Msg.lvclass" Type="LVClass" URL="../WebSocket Service Messages/WebSocket Service Connection Handler Msg/WebSocket Service Connection Handler Msg.lvclass"/>
 		</Item>
-		<Item Name="Write Listener Down Msg.lvclass" Type="LVClass" URL="../WebSocket Server Messages/Write Listener Down Msg/Write Listener Down Msg.lvclass"/>
 	</Item>
 	<Item Name="Palette" Type="Folder">
 		<Item Name="Open Examples.vi" Type="VI" URL="../WebSocket Actor Palette/Open Examples.vi"/>

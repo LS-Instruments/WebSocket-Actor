@@ -40,6 +40,7 @@
 		</Item>
 		<Item Name="WebSocket Server" Type="Folder">
 			<Item Name="Add Client to Service Msg.lvclass" Type="LVClass" URL="../WebSocket Server Messages/Add Client to Service Msg/Add Client to Service Msg.lvclass"/>
+			<Item Name="Write Listener Down Msg.lvclass" Type="LVClass" URL="../WebSocket Server Messages/Write Listener Down Msg/Write Listener Down Msg.lvclass"/>
 			<Item Name="Write listener ID Msg.lvclass" Type="LVClass" URL="../WebSocket Server Messages/Write listener ID Msg/Write listener ID Msg.lvclass"/>
 		</Item>
 		<Item Name="Websocket Service" Type="Folder">

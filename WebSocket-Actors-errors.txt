@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nidocument>
+<nicomment>
+Custom error codes defined by the "WebSocket-Actors" library.
+<nifamily familyname="WebSocket-Actors" displayname="WebSocket-Actors">
+</nifamily>
+</nicomment>
+<nierror code="512000">
+The WebSocket connection dropped for unknown reasons.
+</nierror>
+<nierror code="512001">
+The WebSocket Server could not establish a connection to the peer for unknown reasons.
+</nierror>
+<nierror code="512002">
+The WebSocket Server listener could not be created. Server is going to stop.
+</nierror>
+<nierror code="512003">
+The WebSocket Server listener became invalid for unknown reasons. The WebSocket Server is not accepting the definition of any new server.
+</nierror>
+<nierror code="512004">
+The WebSocket Server is not accepting the definition of any new service.
+</nierror>
+<nierror code="512005">
+The WebSocket Server Manager cannot launch the specified WebSocket Server. Server already running.
+</nierror>
+<nierror code="512006">
+The WebSocket Server Manager cannot stop the specified WebSocket Server. Server not running.
+</nierror>
+<nierror code="512007">
+The WebSocket Server cannot add the specified WebSocket Service. Service already running.
+</nierror>
+</nidocument>

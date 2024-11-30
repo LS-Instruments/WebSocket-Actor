@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-24 12:47:08" Creator="AndreaVaccaro(LSInst" Comments="" ID="0e11bdf6e1201e2d7330c4671bfdf32e">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-27 19:27:09" Creator="AndreaVaccaro(LSInst" Comments="" ID="0a69d971f463b5f48482574b3c88cd89">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_WebSocket_Actor</Package_File_Name>
-    <Library_Version>1.1.0.17</Library_Version>
+    <Library_Version>1.1.0.18</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -385,7 +385,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\Open Examples.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F42244CE0D31541576F7D7FF3C654B7E</GUID>
+      <GUID>612935DA313E87BEAF1B4581EE69F63A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -434,7 +434,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Server-Service Enqueuer Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>43D788158FF423D35BB30C7A399AB7DB</GUID>
+      <GUID>D45CA22971EF87C873E4A5FDF8F0B4EF</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -511,7 +511,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8741C5B5B73F402FCCA1F2CD251B9338</GUID>
+      <GUID>42E223623DE12B6C20D36521DCD8502A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -560,7 +560,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Server Manager Messages\Stop Server Msg\Send Stop Server.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FB14FC3E8AD94F19E4818754E3F3F137</GUID>
+      <GUID>CC86FA4FA3ED744BD85C78AA33B8AF2E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -595,7 +595,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Server Messages\Add Service Msg\Send Add Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>258CFF949EA7AE5D7B378230195AF028</GUID>
+      <GUID>549D0AAB1B981810C63546210895DD54</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -644,7 +644,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Service Messages\Send Msg\Send Send.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>46B91434D47CF9D60D197A5D229D1F9F</GUID>
+      <GUID>C29ECF60585F928643714FC5E50008E3</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

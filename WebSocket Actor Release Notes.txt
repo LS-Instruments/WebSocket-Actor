@@ -1,4 +1,6 @@
 WebSocket Actor Release Notes
+v1.1.1
+- Solved a bug whereby  the WebSocket Server actor, upon handling an error, forwards it to the subscriber but doesnt clear it resulting in an endless lopp in the "Actor Core.vi" (Closes #9)
 v1.1.0
 - Implemented Keepalive functionality whereby a WebSocket client/server checks if the peer is still responding ("Alive") by sending WebSockets Ping messages to the peer on a certain time interval. The peer will answer with a WebSockets Pong message. If the answer is not received within a certain amount timeout the client/server will drop the connection.
 - Implemented secure WebSocket capabilities.

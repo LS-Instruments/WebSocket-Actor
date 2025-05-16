@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2024-11-27 19:27:09" Creator="AndreaVaccaro(LSInst" Comments="" ID="0a69d971f463b5f48482574b3c88cd89">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-10-14 14:13:00" Modified_Date="2025-05-16 23:05:10" Creator="AndreaVaccaro(LSInst" Comments="" ID="c9553f6f207cde6622bc324533711ed9">
   <Library_General_Settings>
     <Package_File_Name>LS_Instruments_AG_lib_WebSocket_Actor</Package_File_Name>
-    <Library_Version>1.1.0.18</Library_Version>
+    <Library_Version>1.1.1.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>vipm packages</Library_Output_Folder>
@@ -54,13 +54,8 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
       <Copyright/>
       <Packager>Andrea Vaccaro</Packager>
       <URL>https://github.com/LS-Instruments/WebSocket-Actor</URL>
-      <Release_Notes>- Implemented Keepalive functionality whereby a WebSocket client/server checks if the peer is still responding ("Alive") by sending WebSockets Ping messages to the peer on a certain time interval. The peer will answer with a WebSockets Pong message. If the answer is not received within a certain amount timeout the client/server will drop the connection.
-
-- Implemented secure WebSocket connection capabilities.
-
-- Implemented error generation, hanlding and reporting
-
-- Improved palette structure</Release_Notes>
+      <Release_Notes>Solved a bug whereby  the WebSocket Server actor, upon handling an error, forwards it to the subscriber but doesnt clear it resulting in an endless lopp in the "Actor Core.vi" (Closes #9)
+</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -385,7 +380,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\Open Examples.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>612935DA313E87BEAF1B4581EE69F63A</GUID>
+      <GUID>E0B345DA00E2CBD3B89876BC08AD7C74</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -434,7 +429,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Server-Service Enqueuer Msg.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D45CA22971EF87C873E4A5FDF8F0B4EF</GUID>
+      <GUID>C6FA4BC00B967F23A0AE1717305E6336</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -511,7 +506,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Actor Palette\WebSocket Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>42E223623DE12B6C20D36521DCD8502A</GUID>
+      <GUID>ACA3D7E040723CDD154F5367078260F8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -560,7 +555,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Server Manager Messages\Stop Server Msg\Send Stop Server.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>CC86FA4FA3ED744BD85C78AA33B8AF2E</GUID>
+      <GUID>07424C475AB84371B5D559958025859B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -595,7 +590,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Server Messages\Add Service Msg\Send Add Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>549D0AAB1B981810C63546210895DD54</GUID>
+      <GUID>41E16F2032A82A5557F527FB00175CB1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -644,7 +639,7 @@ Look at the LabVIEW example folder for a comprehensive set of examples.
         <Path>WebSocket Actor\WebSocket Service Messages\Send Msg\Send Send.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C29ECF60585F928643714FC5E50008E3</GUID>
+      <GUID>46895B9A20882130E31B1763917B0CF3</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

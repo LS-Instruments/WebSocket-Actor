@@ -1,6 +1,8 @@
 
 # WebSocket Actor
 
+[![Image](https://www.vipm.io/package/ls_instruments_ag_lib_websocket_actor/badge.svg?metric=installs)](https://www.vipm.io/package/ls_instruments_ag_lib_websocket_actor/) [![Image](https://www.vipm.io/package/ls_instruments_ag_lib_websocket_actor/badge.svg?metric=stars)](https://www.vipm.io/package/ls_instruments_ag_lib_websocket_actor/)
+
 ## Authors
 Documentation: Andrea Vaccaro, David Grollier  
 Code: Andrea Vaccaro
@@ -25,6 +27,10 @@ Look in the example folder for a comprehensive set of code examples covering the
 
 Please note that within this library **"resource names"**, as defined in
 the WebSocket protocol specification, are referred to as **"services"**.
+
+## VIPM Package Installation
+
+Install the **WebSocket Actor** VIPM Package by means of the VI Package Manager. The VIPM package can be found  <a href="https://www.vipm.io/package/ls_instruments_ag_lib_websocket_actor/" target="_blank">here</a> 
 
 # Library
 
@@ -313,3 +319,7 @@ Abstract messages have private properties that carry useful information to be us
 **Peer ID** String specifying the Peer ID from which the event is being triggered if the event is originating from a client
 
 **Service Name** String specifying the service name from which the event is being triggered
+
+## Contributing
+
+Feel free to fork and submit pull requests. After cloning the repository, the best way to install the required dependencies is to install the VIPM pakcage.
